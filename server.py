@@ -48,4 +48,4 @@ async def embed(data: B64Image):
     return 'Ein Bild mit der Breite ' + str(img.size[0]) + ' konnte erfolgreich eingelesen werden'
 
 if __name__ == "__main__":
-    uvicorn.run("server:app", host="0.0.0.0", port=8080, log_level="info")
+    uvicorn.run(app, host="0.0.0.0")
